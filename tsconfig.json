@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+		"target": "es5",
+		"module": "amd",
+		"out": "app.js",
+		"sourceMap": true
+	},
+	"exclude": [
+		"node_modules",
+		"bower_components",
+		"typings/tsd.d.ts"
+	],
+	"files": [
+		"src/app/app.ts"
+	]
+}

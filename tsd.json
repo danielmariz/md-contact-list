@@ -1,0 +1,39 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "angularjs/angular-animate.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/angular-cookies.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/angular-route.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/angular-mocks.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/angular-resource.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/angular-sanitize.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/legacy/angular-scenario-1.2.d.ts": {
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
+    },
+    "angularjs/angular.d.ts": {
+      "commit": "26a1f8c44f5fe76168df717020bfb93839b63db3"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "26a1f8c44f5fe76168df717020bfb93839b63db3"
+    },
+    "angular-material/angular-material.d.ts": {
+      "commit": "26a1f8c44f5fe76168df717020bfb93839b63db3"
+    }
+  }
+}
