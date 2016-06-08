@@ -9,21 +9,27 @@
 		}
 	</style>
 </head>
-<body layout="row" ng-cloak ng-controller="users as vm"> 
+<body> 
 
-
-	<aside ng-include="'templates/sidenav.html'" layout="vertical"></aside>
+    <ng-view></ng-view>
+	<!--<aside ng-include="'templates/sidenav.html'" layout="vertical"></aside>
 
     <section layout="column" flex>
 			<header ng-include="'templates/toolbar-header.html'"></header>
 			<md-content layout-xs="column" layout="row" layout-padding ng-include="'templates/card.html'"></md-content>
-    </section>
+    </section>-->
 
     <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
     <script src="/bower_components/angular-aria/angular-aria.js"></script>
     <script src="/bower_components/angular-animate/angular-animate.js"></script>
     <script src="/bower_components/hammerjs/hammer.js"></script>
     <script src="/bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/flot/jquery.flot.js"></script>
+    <script src="bower_components/flot/jquery.flot.pie.js"></script>
+    <script src="bower_components/flot/jquery.flot.resize.js"></script>
+    <script src="bower_components/angular-flot/angular-flot.js"></script>
     <script src="release/js/app.js"></script>
 
 </body>

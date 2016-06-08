@@ -1,0 +1,32 @@
+<md-toolbar class="md-hue-2">
+      <div class="md-toolbar-tools">
+        <md-button ng-href="#/" class="md-icon-button">
+          <md-icon md-svg-icon="assets/images/icons/contact.svg"></md-icon>
+        </md-button>
+        <h1>
+          Dashboard
+        </h1>
+      </div>
+</md-toolbar>
+<md-content layout="row" >
+    <section flex="40" ng-if="vm.status === 'LOADED'">
+        <div class="pie-chart-container" style="height: 300;">
+            <flot id="flot-chart-content" class="flot-chart-content" dataset="vm.data" options="vm.chartOptions" height="280"></flot>
+            <div class="pie-chart-data">
+                <h3 ng-bind-html="vm.chartTitle"></h3>
+                <h5 ng-bind="vm.chartValue"></h5>
+            </div>
+        </div>
+    </section>
+    <section flex="60" ng-if="vm.status === 'LOADED'">
+        <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom' options="vm.mapConfig.options" styles="vm.mapConfig.styles">
+	    <ui-gmap-markers fit="true" ng-if="vm.models.length > 0" models="vm.models" coords="'self'" doCluster="true" clusterOptions="vm.config.markCluster" icon="vm.markerIcon" events="vm.markerEvents">
+	    	<ui-gmap-windows show="'show'" ng-cloak>
+                <div ng-non-bindable>
+                	<h3>{{name || locationName}}</h3>
+                </div>
+            </ui-gmap-windows>
+        </ui-gmap-markers>
+    </ui-gmap-google-map>
+    </section>
+</md-content>

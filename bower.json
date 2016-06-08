@@ -16,6 +16,17 @@
     "angular-material": "^1.1.0",
     "angular": "~1.5.3",
     "angular-route": "~1.5.3",
-    "angular-mocks": "~1.5.3"
+    "angular-mocks": "~1.5.3",
+    "Flot": "flot#^0.8.3",
+    "angular-flot": "0.0.16"
+  },
+  "overrides": {
+    "Flot": {
+      "main": [
+        "jquery.flot.js",
+        "jquery.flot-pie.js",
+        "jquery.flot.resize.js"
+      ]
+    }
   }
 }

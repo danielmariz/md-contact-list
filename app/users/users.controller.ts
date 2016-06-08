@@ -1,8 +1,6 @@
 /// <reference path="../_App.ts" />
 module users
 {
-	
-
     export interface ISidenavObject {
         toggle(): ng.IPromise<void>;
         open(): ng.IPromise<void>;

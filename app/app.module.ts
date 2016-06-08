@@ -4,6 +4,6 @@ module app
 	//angular.module('app', ['ngMaterial']);
     export class module
 	{
-		public static register = angular.module('app', ['ngMaterial']);
+		public static register = angular.module('app', ['ngRoute', 'ngMaterial', 'angular-flot']);
 	}
 }
