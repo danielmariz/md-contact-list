@@ -77,6 +77,19 @@ module users
             }
         }
 
+        GetInitials (name:string):string {
+			if (!name)
+				return;
+
+			var w = name.split(' ', 2);
+			var t = '';
+			w.forEach(function(value) {
+				t += value.substring(0, 1);
+			});
+
+			return t.toUpperCase();
+		}
+
 	}
 
 	//this call has to be at the bottom

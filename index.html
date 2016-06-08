@@ -16,9 +16,7 @@
 
     <section layout="column" flex>
 			<header ng-include="'templates/toolbar-header.html'"></header>
-			<md-content flex layout-padding>
-				status: {{vm.status}}<br>
-			</md-content>
+			<md-content layout-xs="column" layout="row" layout-padding ng-include="'templates/card.html'"></md-content>
     </section>
 
     <script src="/bower_components/angular/angular.js"></script>

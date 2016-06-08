@@ -1,0 +1,51 @@
+<!--{
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  }-->
+<div flex-xs 
+    flex-gt-xs="100" 
+    flex-gt-sm="70" 
+    flex-gt-md="50" 
+    flex-gt-lg="33"  
+    layout="column">
+    <md-card ng-if="vm.selected">
+        <md-card-title layout="row">
+            <md-card-title-media>
+                <div class="md-media-lg card-media">
+                    <img ng-src="http://dummyimage.com/152x152/999999/fff.png&text={{vm.GetInitials(vm.selected.name)}}">
+                </div>
+            </md-card-title-media>
+            <md-card-title-text layout-padding>
+            <span class="md-headline">{{vm.selected.name}}</span>
+            <span class="md-subhead">{{vm.selected.company.name}}</span>
+            <p>
+                {{vm.selected.address.suite}} / {{vm.selected.address.street}}<br>
+                {{vm.selected.address.city}} | {{vm.selected.address.zipcode}}
+            </p>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button>{{vm.selected.phone}}</md-button>
+            <md-button>{{vm.selected.email}}</md-button>
+        </md-card-actions>
+    </md-card>
+</div>
