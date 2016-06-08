@@ -30,9 +30,11 @@ gulp watchServe
 ```
 gulp watchTest
 ```
+
 ###*WIP: Work in progress
+
 ####TODO LIST
-*Finishing Dashboard
-*Unit Tests
-*e2e Tests
+    -Finishing Dashboard
+    -Unit Tests
+    -e2e Tests
 
