@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html  ng-app="app">
+<html ng-app="app">
 <head>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
-		<style>
-			[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-				display: none !important;
-			}
-		</style>
+	<style>
+		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+			display: none !important;
+		}
+	</style>
 </head>
-    <body layout="row" ng-cloak ng-controller="users as vm"> 
+<body layout="row" ng-cloak ng-controller="users as vm"> 
 
-			<aside ng-include="'app/views/sidenav.html'" layout="vertical"></aside>
+
+	<aside ng-include="'templates/sidenav.html'" layout="vertical"></aside>
 
     <section layout="column" flex>
-			<header ng-include="'app/views/toolbar-header.html'"></header>
-			<md-content flex>
-
+			<header ng-include="'templates/toolbar-header.html'"></header>
+			<md-content flex layout-padding>
 				status: {{vm.status}}<br>
 			</md-content>
     </section>

@@ -5,7 +5,7 @@
 /
 /   Author: Daniel Mariz
 */
-/// <reference path="../app.d.ts" />
+/// <reference path="../_App.ts" />
 module services 
 {
     export interface IRequestError {

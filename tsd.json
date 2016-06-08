@@ -27,13 +27,10 @@
       "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
     },
     "angularjs/angular.d.ts": {
-      "commit": "26a1f8c44f5fe76168df717020bfb93839b63db3"
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
     },
     "jquery/jquery.d.ts": {
-      "commit": "26a1f8c44f5fe76168df717020bfb93839b63db3"
-    },
-    "angular-material/angular-material.d.ts": {
-      "commit": "26a1f8c44f5fe76168df717020bfb93839b63db3"
+      "commit": "ec6e0ae9525a165ca94d751932dd387078800c1e"
     }
   }
 }

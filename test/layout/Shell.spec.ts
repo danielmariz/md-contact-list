@@ -33,14 +33,14 @@ describe("controller: Shell", function() {
 		expect(controller.message).toBe('a message comes here now!!');
 	});
 
-	it('should have a function: increase()', function() {
-		//dump(controller.increase);
-		expect(controller.increase).toBeDefined();
-	});
+	// it('should have a function: increase()', function() {
+	// 	//dump(controller.increase);
+	// 	expect(controller.increase).toBeDefined();
+	// });
 
-	it('should increase count by 1 when calling: increase()', function() {
-		expect(controller.count).toBe(3);
-		controller.increase();
-		expect(controller.count).toBe(4);
-	});
+	// it('should increase count by 1 when calling: increase()', function() {
+	// 	expect(controller.count).toBe(3);
+	// 	controller.increase();
+	// 	expect(controller.count).toBe(4);
+	// });
 });

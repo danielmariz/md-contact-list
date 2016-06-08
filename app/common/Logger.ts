@@ -1,12 +1,11 @@
-/// <reference path="../app.d.ts" />
+/// <reference path="../_App.ts" />
 module common
 {
-	export class LoggerService
+	export class Logger
 	{
 		private log: ng.ILogService;
 
-		public static $inject: string[] = ['$log'];
-
+		public static $inject = ['$log'];
 		constructor($log: ng.ILogService)
 		{
 			this.log = $log;
@@ -30,5 +29,6 @@ module common
 	}
 
 	//this call has to be at the bottom
-	app.module.register.service('logger', LoggerService);
+	//angular.module('app').service('logger', Logger);
+	app.module.register.service('logger', Logger);
 }

@@ -1,0 +1,31 @@
+<md-sidenav class="md-sidenav-left"
+    md-component-id="left"
+    md-is-locked-open="$mdMedia('gt-sm')"
+    md-whiteframe="4">
+    <md-toolbar layout="column" layout-align="center center"> 
+        <h1 class="md-toolbar-tools">Contacts</h1>
+    </md-toolbar>
+    <md-content layout-padding>
+        <div ng-if="vm.status === 'LOADING'" layout="column" layout-align="center center">
+            <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+            <span>Loading Data...</span>
+        </div>
+        <md-autocomplete ng-if="vm.status === 'LOADED'" md-search-text="vm.searchText"
+            md-items="item in vm.data | filter:vm.searchText"
+            md-item-text="item.name"
+            md-min-lenght="3"
+            placeholder="Filter">
+            <md-item-template>
+                <span md-highlight-text="vm.searchText" md-hightlight-flags="^i">{{item.name}}</span>
+            </md-item-template>
+        </md-autocomplete>
+        <md-list ng-if="vm.status === 'LOADED'" >
+            <md-list-item ng-repeat="user in vm.data | filter:vm.searchText | orderBy:'name'">
+                <md-button ng-click="vm.SelectUser(user)" 
+                    ng-class="{'md-primary': user === vm.selected}">
+                    {{user.name }}
+                </md-button>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>

@@ -59,7 +59,7 @@ gulp.task('compile', function (callback) {
  * compile Typescript to Javascript
  */
 gulp.task('compileTS', function () {
-    var tsResult = gulp.src(['app/**/*.ts'])
+    var tsResult = gulp.src(['app/**/*.ts', 'typings/**/*.ts'])
                            .pipe(newer('release/js/app.min.js'))
                            .pipe(sourcemaps.init()) //This means sourcemaps will be generated
                            .pipe(ts(tsProject))
