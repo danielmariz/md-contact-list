@@ -18,6 +18,9 @@
             <md-item-template>
                 <span md-highlight-text="vm.searchText" md-hightlight-flags="^i">{{item.name}}</span>
             </md-item-template>
+            <md-not-found>
+                No user matching for "{{vm.searchText}}" 
+            </md-not-found>
         </md-autocomplete>
         <md-list ng-if="vm.status === 'LOADED'" >
             <md-list-item ng-repeat="user in vm.data | filter:vm.searchText | orderBy:'name'">
